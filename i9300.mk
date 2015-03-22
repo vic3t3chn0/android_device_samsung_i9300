@@ -46,13 +46,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
-# Product specific Packages
-PRODUCT_PACKAGES += \
-    libsecril-client \
-    libsecril-client-sap \
-    SamsungServiceMode \
-    tinyplay
-
 # NFC
 PRODUCT_PACKAGES += \
 	nfc.exynos4 \
@@ -62,11 +55,10 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Camera Wrapper
-PRODUCT_PACKAGES += \
-    camera.exynos4
+#PRODUCT_PACKAGES += \
+#    camera.exynos4
 
 PRODUCT_COPY_FILES += \
-    packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 
