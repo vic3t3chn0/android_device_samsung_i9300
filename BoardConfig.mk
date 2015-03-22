@@ -29,27 +29,12 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_i9300_defconfig
+TARGET_KERNEL_CONFIG := aosp_i9300_defconfig
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
-# Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/i9300/selinux
-
-BOARD_SEPOLICY_UNION += \
-    device.te \
-    domain.te \
-    file.te \
-    file_contexts \
-    init.te \
-    mediaserver.te \
-    rild.te \
-    system.te \
-    ueventd.te \
-    wpa_supplicant.te
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
